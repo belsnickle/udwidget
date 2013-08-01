@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+  -   Version: MPL 1.1/GPL 2.0/LGPL 2.1
+  -
+  - The contents of this file are subject to the Mozilla Public License Version
+  - 1.1 (the "License"); you may not use this file except in compliance with
+  - the License. You may obtain a copy of the License at
+  - http://www.mozilla.org/MPL/
+  - 
+  - Software distributed under the License is distributed on an "AS IS" basis,
+  - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  - for the specific language governing rights and limitations under the
+  - License.
+  -
+  - The Original Code is udWidget.
+  -
+  - The Initial Developer of the Original Code is Max Grivas.
+  -
+  - Portions created by the Initial Developer are Copyright (C) 2007
+  - the Initial Developer. All Rights Reserved.
+  -
+  - Contributor(s):
+  -
+  - Alternatively, the contents of this file may be used under the terms of
+  - either the GNU General Public License Version 2 or later (the "GPL"), or
+  - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+  - in which case the provisions of the GPL or the LGPL are applicable instead
+  - of those above. If you wish to allow use of your version of this file only
+  - under the terms of either the GPL or the LGPL, and not to allow others to
+  - use your version of this file under the terms of the MPL, indicate your
+  - decision by deleting the provisions above and replace them with the notice
+  - and other provisions required by the GPL or the LGPL. If you do not delete
+  - the provisions above, a recipient may use your version of this file under
+  - the terms of any one of the MPL, the GPL or the LGPL.
+  - 
+  - ***** END LICENSE BLOCK ***** 
+  
+  # stored for reference
+  
+      <preference id="boolpref1" name="extensions.udwidget.boolpref" type="bool"/>
+      <preference id="intpref1" name="extensions.udwidget.intpref" type="int"/>
+  -->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://udwidget/locale/options.dtd">
+<dialog id="udwidgetOptions" title="&options_window.title;" xmlns:html="http://www.w3.org/1999/xhtml" buttons="accept,cancel" ondialogaccept="return udwSaveOptions();" ondialogcancel="return udwCancelOptions();" onload="udwInitOptions()" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript"	src="chrome://udwidget/content/options.js"></script>
+<script type="application/x-javascript"	src="chrome://udwidget/content/cache.js"></script>
+<tabbox>
+	<tabs>
+		<tab id="tabgeneral" label="&options_udwbox.label;" selected="true"/>
+		<tab id="tabwmap" label="&options_wmbox.label;"/>
+		<tab id="tabiwitness" label="&options_iwbox.label;"/>
+		<tab id="tabpexpand" label="&options_pebox.label;"/>
+	</tabs>
+	<tabpanels>
+		<tabpanel id="&options_udwbox.label;">
+			<vbox flex="1">
+				<groupbox>
+					<caption id="udwgroup" label="&options_udwgroup.label;"/>
+					<checkbox id="udwenable" label="&options_udwenable.label;" checked="true" />
+					<checkbox id="ctenable" label="&options_ctenable.label;" checked="true" />
+					<checkbox id="znenable" label="&options_znenable.label;" checked="true" />
+					<button id="znclear" label="&options_znclear.label;" oncommand="udw_opt_znclear();"/>
+				</groupbox>
+				<groupbox>
+					<caption id="colorgroup" label="&options_colorgroup.label;"/>
+					<checkbox id="colorenable" label="&options_colorenable.label;" checked="false" oncommand="udwOptionsMakeDisabled('colorfile','colorenable');" />
+					<button id="colorfile" label="&options_colorfile.label;" oncommand="udwSelectColorFile();"/>
+					<checkbox id="colorhpenable" label="&options_colorhpenable.label;" checked="false" />
+				</groupbox>
+				<groupbox>
+					<caption id="debuggroup" label="&options_debuggroup.label;"/>
+					<checkbox id="debugenable" label="&options_debugenable.label;" checked="flase" />
+				</groupbox>
+
+			</vbox>
+		</tabpanel>
+		<tabpanel id="&options_wmbox.label;">
+			<vbox flex="1">
+				<groupbox>
+					<caption id="wmgroup" label="&options_wmgroup.label;"/>
+					<checkbox id="wmenable" label="&options_wmenable.label;" checked="true" />
+					<groupbox>
+						<caption id="wmwidthcap" label="&options_wmwidth.label;"/>
+						<textbox id="wmwidth" />
+					</groupbox>
+					<groupbox>
+						<caption id="wmblockscap" label="&options_wmblocks.label;"/>
+						<textbox  id="wmblocks" />
+					</groupbox>
+					<groupbox>
+						<caption id="wmbackcap" label="&options_wmback.label;"/>
+						<textbox  id="wmback" />
+					</groupbox>
+					<checkbox id="wmlite" label="&options_wmlite.label;" checked="false" />
+					<checkbox id="wmsuburbtip" label="&options_wmsuburbtip.label;" checked="false" />
+					<checkbox id="maxmaplink" label="&options_maxmaplink.label;" checked="true" />
+				</groupbox>
+			</vbox>
+		</tabpanel>
+		<tabpanel id="&options_iwbox.label;">
+			<vbox flex="1">
+				<groupbox>
+					<caption id="iwgroup" label="&options_iwgroup.label;"/>
+					<checkbox id="iwenable" label="&options_iwenable.label;" checked="false" />
+					<groupbox>
+						<caption id="iwposgroup" label="Insert iWitness Tool"/>
+						<radiogroup id="iwpos">
+							<radio id="iwpos1" label="Below UD Map"/>
+							<radio id="iwpos2" label="Above Walking Map" selected="true"/>
+							<radio id="iwpos3" label="Below Walking Map"/>
+						</radiogroup>
+					</groupbox>
+					<checkbox id="glenable" label="&options_glenable.label;" checked="false" />
+					<description style="width: 80px">&options_glwaiver.label;</description>
+				</groupbox>
+			</vbox>
+		</tabpanel>
+		<tabpanel id="&options_pebox.label;">
+			<vbox flex="1">
+				<groupbox>
+					<caption id="pegroup" label="&options_pegroup.label;"/>
+					<description style="width: 80px">&options_petip.label;</description>
+				</groupbox>
+				<hbox flex="1">
+					<groupbox>
+						<caption id="ssgroup" label="Survivor Skills"/>
+						<checkbox id="skillpistol" label="&options_skillpistol.label;" checked="false" />
+						<checkbox id="skillshotgun" label="&options_skillshotgun.label;" checked="false" />
+						<checkbox id="skillhand" label="&options_skillhand.label;" checked="false" />
+						<checkbox id="skillknife" label="&options_skillknife.label;" checked="false" />
+						<checkbox id="skillaxe" label="&options_skillaxe.label;" checked="false" />
+						<checkbox id="skillrunning" label="&options_skillrunning.label;" checked="true" />
+						<checkbox id="skillnecro" label="&options_skillnecro.label;" checked="true" />
+						<checkbox id="skillaid" label="&options_skillaid.label;" checked="false" />
+						<checkbox id="skilldiagnosis" label="&options_skilldiagnosis.label;" checked="false" />
+						<checkbox id="skillshopping" label="&options_skillshopping.label;" checked="false" />
+						<checkbox id="skillbody" label="&options_skillbody.label;" checked="true" />
+						<checkbox id="skilltagging" label="&options_skilltagging.label;" checked="false" />
+						<checkbox id="skillconstruction" label="&options_skillconstruction.label;" checked="true" />
+						<checkbox id="skillradio" label="&options_skillradio.label;" checked="false" />
+						<checkbox id="skillheadshot" label="&options_skillheadshot.label;" checked="false" />
+					</groupbox>
+					<groupbox>
+						<caption id="zsgroup" label="Zombie Skills"/>
+						<checkbox id="skillfear" label="&options_skillfear.label;" checked="false" />
+						<checkbox id="skillblood" label="&options_skillblood.label;" checked="false" />
+						<checkbox id="skilltrail" label="&options_skilltrail.label;" checked="false" />
+						<checkbox id="skilldeath" label="&options_skilldeath.label;" checked="false" />
+						<checkbox id="skilldigestion" label="&options_skilldigestion.label;" checked="false" />
+						<checkbox id="skillbite" label="&options_skillbite.label;" checked="true" />
+						<checkbox id="skillmortis" label="&options_skillmortis.label;" checked="false" />
+						<checkbox id="skilllurch" label="&options_skilllurch.label;" checked="false" />
+						<checkbox id="skillgrip" label="&options_skillgrip.label;" checked="false" />
+						<checkbox id="skillrend" label="&options_skillrend.label;" checked="false" />
+						<checkbox id="skillgrasp" label="&options_skillgrasp.label;" checked="false" />
+						<checkbox id="skilldrag" label="&options_skilldrag.label;" checked="false" />
+						<checkbox id="skillmemories" label="&options_skillmemories.label;" checked="false" />
+						<checkbox id="skillrattle" label="&options_skillrattle.label;" checked="false" />
+						<checkbox id="skillgroan" label="&options_skillgroan.label;" checked="false" />
+						<checkbox id="skillransack" label="&options_skillransack.label;" checked="true" />
+						<checkbox id="skillgesture" label="&options_skillgesture.label;" checked="false" />
+						<checkbox id="skillgait" label="&options_skillgait.label;" checked="false" />
+						<checkbox id="skillgrab" label="&options_skillgrab.label;" checked="false" />
+						<checkbox id="skillrot" label="&options_skillrot.label;" checked="true" />
+					</groupbox>
+				</hbox>
+			</vbox>
+		</tabpanel>
+	</tabpanels>
+</tabbox>
+</dialog>

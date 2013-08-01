@@ -1,0 +1,67 @@
+<!ENTITY options_window.title "udWidget Options">
+<!ENTITY options_udwbox.label "udWidget">
+<!ENTITY options_udwgroup.label "General">
+<!ENTITY options_udwenable.label "Enable udWidget">
+<!ENTITY options_ctenable.label "Enable Add/Remove Contact Links">
+<!ENTITY options_colorgroup.label "Colorization">
+<!ENTITY options_colorenable.label "Enable Colorizer">
+<!ENTITY options_colorfile.label "Import Groups and Names">
+<!ENTITY options_colorhpenable.label "Color Hit Points">
+<!ENTITY options_debuggroup.label "Debug">
+<!ENTITY options_debugenable.label "Enable debugging messages">
+<!ENTITY options_wmbox.label "Walking Map">
+<!ENTITY options_wmgroup.label "General">
+<!ENTITY options_wmenable.label "Enable Walking Map">
+<!ENTITY options_wmsuburbtip.label "Show Suburb Name In Tooltips">
+<!ENTITY options_maxmaplink.label "Show Zoom Link">
+<!ENTITY options_wmwidth.label "Width in pixels [256]">
+<!ENTITY options_wmblocks.label "Width in blocks [11]">
+<!ENTITY options_wmback.label "Background: [#444]">
+<!ENTITY options_wmlite.label "Hi-lite Current Location">
+<!ENTITY options_znenable.label "Enable Zombie Names">
+<!ENTITY options_znclear.label "Clear Names Cache (empty)">
+<!ENTITY options_pebox.label "Profile Expander">
+<!ENTITY options_pegroup.label "General">
+<!ENTITY options_petip.label "Select the skills for the profile expander to display.">
+<!ENTITY options_iwbox.label "iWitness">
+<!ENTITY options_iwgroup.label "General">
+<!ENTITY options_iwenable.label "Enable iWitness Tools">
+<!ENTITY options_glenable.label "Enable Graffiti Logger">
+<!ENTITY options_glwaiver.label "By enabling Graffiti Logger you agree to submit graffiti observed during game play to the publicly available database at http://iwitness.urbandead.info/. No information about you or your characters is submitted during this process. Only graffiti and billboard information is sent, recorded or displayed. You may disable this feature at any time.">
+<!ENTITY options_skillgroup.label "Skills">
+<!ENTITY options_skillpistol.label "Basic/Pistol Training">
+<!ENTITY options_skillshotgun.label "Shotgun Training">
+<!ENTITY options_skillhand.label "Hand-to-Hand Combat">
+<!ENTITY options_skillknife.label "Knife Combat">
+<!ENTITY options_skillaxe.label "Axe Proficiency">
+<!ENTITY options_skillrunning.label "Free Running">
+<!ENTITY options_skillnecro.label "NecroTech Skills">
+<!ENTITY options_skillaid.label "First Aid/Surgery">
+<!ENTITY options_skilldiagnosis.label "Diagnosis">
+<!ENTITY options_skillshopping.label "Shopping/Bargain Hunting">
+<!ENTITY options_skillbody.label "Body Building">
+<!ENTITY options_skilltagging.label "Tagging">
+<!ENTITY options_skillconstruction.label "Construction">
+<!ENTITY options_skillradio.label "Radio Operation">
+<!ENTITY options_skillheadshot.label "Headshot">
+
+<!ENTITY options_skillfear.label "Scent Fear">
+<!ENTITY options_skillblood.label "Scent Blood">
+<!ENTITY options_skilltrail.label "Scent Trail">
+<!ENTITY options_skilldeath.label "Scent Death">
+<!ENTITY options_skilldigestion.label "Digestion">
+<!ENTITY options_skillbite.label "Infectious Bite">
+<!ENTITY options_skillmortis.label "Vigour Mortis">
+<!ENTITY options_skilllurch.label "Neck Lurch">
+<!ENTITY options_skillgrip.label "Death Grip">
+<!ENTITY options_skillrend.label "Rend Flesh">
+<!ENTITY options_skillgrasp.label "Tangling Grasp">
+<!ENTITY options_skilldrag.label "Feeding Drag">
+<!ENTITY options_skillmemories.label "Memories of Life">
+<!ENTITY options_skillrattle.label "Death Rattle">
+<!ENTITY options_skillgroan.label "Feeding Groan">
+<!ENTITY options_skillransack.label "Ransack">
+<!ENTITY options_skillgesture.label "Flailing Gesture">
+<!ENTITY options_skillgait.label "Lurching Gait">
+<!ENTITY options_skillgrab.label "Ankle Grab">
+<!ENTITY options_skillrot.label "Brain Rot">

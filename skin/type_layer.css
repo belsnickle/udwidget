@@ -1,0 +1,220 @@
+.udw_SuburbBackground {
+	font-size : 2px;
+	font-family : Verdana,Arial,Helvetica,sans-serif;
+ }
+
+/*
+ * 
+ *	Defaut Building Styles
+ *
+ */
+
+/* Hi-lite your current position from d7.css cx */
+.lite {
+	color: black;
+	background-color: yellow;
+	border: 2px #EEE inset;
+	}
+/* Black NecroTech Buildings are just cooler ... */
+.necrotech {
+	color: white;
+	background-color: black;
+	}
+
+.arms {
+	color: black;
+	background-color: #876;
+	border: 1px #666 solid;
+	}
+.autoshop {
+	color: black;
+	background-color: #CCC;
+	border: 1px #666 solid;
+	}
+.bank {
+	color: black;
+	background-color: #DED;
+	border: 1px #666 solid;
+	}
+.building {
+	color: black;
+	background-color: #AAD;
+	border: 1px #666 solid;
+	}
+.cathedral {
+	color: black;
+	background-color: #FFF;
+	}
+.church {
+	color: black;
+	background-color: #FFF;
+	border: 1px #666 solid;
+	}
+.cinema {
+	color: black;
+	background-color: #DDD;
+	border: 1px #666 solid;
+	}
+.club {
+	color: black;
+	background-color: #C9C;
+	border: 1px #A7A dotted;
+	}
+.factory {
+	color: black;
+	background-color: #AAA;
+	border: 1px #666 solid;
+	}
+.fire {
+	color: black;
+	background-color: #FDD;
+	border: 1px #F00 solid;
+	}
+.hospital {
+	color: black;
+	background-color: #F99;
+	border: 1px #666 solid;
+	}
+.hotel {
+	color: black;
+	background-color: #C94;
+	border: 1px #666 solid;
+	}
+.junkyard {
+	color: black;
+	background-color: #765;
+	border: 1px #DDD dotted;
+	}
+.library {
+	color: black;
+	background-color: #EEE;
+	border: 1px #9C9 solid;
+	}
+.mall {
+	color: black;
+	background-color: #EEF;
+	}
+.mansion {
+	color: black;
+	background-color: #EEE;
+	border: 1px #EEE outset;
+	}
+.museum {
+	color: black;
+	background-color: #898;
+	border: 1px #9C9 solid;
+	}
+.police {
+	color: black;
+	background-color: #DDF;
+	border: 1px #00F solid;
+	}
+.railway {
+	color: black;
+	background-color: #888;
+	border: 1px #666 solid;
+	}
+.school {
+	color: black;
+	background-color: #899;
+	border: 1px #666 solid;
+	}
+.stadium {
+	color: black;
+	background-color: #9C9;
+	border: 1px #765 solid;
+	}
+.towers {
+	color: black;
+	background-color: #EEE;
+	border: 1px #666 solid;
+	}
+.warehouse {
+	color: black;
+	background-color : #987;
+	border: 1px #666 solid;
+	}
+.zoobldg {
+	color: black;
+	background-color: #965
+	border: 1px #DDD dotted;
+	}
+
+/*
+ *
+ *	Still Need Updating
+ *
+ */
+
+.power {
+	color: black;
+	background-color: #AAA;
+	}
+
+.fort {
+	color: black;
+	background-color: #FE8;
+	}
+
+.armoury {
+	color: white;
+	background-color: #888;
+	}
+
+/*
+ *
+ *	Default Outdoor Locations
+ *	#wm_ud
+ */
+
+#wm_ud .carpark {
+	color: black;
+	background-color: #666;
+	}
+
+#wm_ud .zoo {
+	color: black;
+	background-color: #965;
+	}
+
+#wm_ud .cemetery {
+	color: black;
+	background-color: #9C9;
+	border: 1px #666 solid;
+	}
+
+#wm_ud .monument {
+	color: black;
+	background-color: #666;
+	}
+
+#wm_ud .park {
+	color: black;
+	background-color: #9C9;
+	border: 1px #DDD solid;
+	}
+
+#wm_ud .street {
+	color: black;
+	background-color: #CCC;
+	}
+
+#wm_ud .wasteland {
+	color: black;
+	background-color: #765;
+	}
+
+/*
+ *
+ *	Free Running Location Styles
+ *
+ */
+
+#wm_run .carpark { color: black; }
+#wm_run .cemetery { color: black; }
+#wm_run .monument { color: black; }
+#wm_run .park { color: black; }
+#wm_run .street { color: black; }
+#wm_run .wasteland { color: black; }
+#wm_run .zoo { color: black; }
+

@@ -1,0 +1,5 @@
+content	udwidget	content/
+locale	udwidget	en-US	locale/en-US/
+skin	udwidget	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://udwidget/content/udwidget.xul
+style	chrome://udwidget/skin/udwidget.css
