@@ -27,7 +27,7 @@
 <!ENTITY options_iwgroup.label "General">
 <!ENTITY options_iwenable.label "Enable iWitness Tools">
 <!ENTITY options_glenable.label "Enable Graffiti Logger">
-<!ENTITY options_glwaiver.label "By enabling Graffiti Logger you agree to submit graffiti observed during game play to the publicly available database at http://iwitness.urbandead.info/. No information about you or your characters is submitted during this process. Only graffiti and billboard information is sent, recorded or displayed. You may disable this feature at any time.">
+<!ENTITY options_glwaiver.label "By enabling Graffiti Logger you agree to submit graffiti observed during game play to the publicly available database at http://iwitness.zgarah.com/. No information about you or your characters is submitted during this process. Only graffiti and billboard information is sent, recorded or displayed. You may disable this feature at any time.">
 <!ENTITY options_skillgroup.label "Skills">
 <!ENTITY options_skillpistol.label "Basic/Pistol Training">
 <!ENTITY options_skillshotgun.label "Shotgun Training">

@@ -1,4 +1,4 @@
-/* ***** BEGIN LICENSE BLOCK *****
+﻿/* ***** BEGIN LICENSE BLOCK *****
  *   Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
  * The contents of this file are subject to the Mozilla Public License Version
@@ -273,4 +273,3 @@ var FetchReqs = null;
  */
  function udw_ZN_onError(e)  {
 	}  //  udw_ZN_onError
-

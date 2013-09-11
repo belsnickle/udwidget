@@ -1,20 +1,44 @@
 <?xml version="1.0"?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
-         xmlns:NC="http://home.netscape.com/NC-rdf#"
-         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="udwidget@gmail.com"
-                   em:name="udwidget"
-                   em:version="0.0.4.69"
-                   em:creator="Max Grivas"
-                   em:description="Add map of Malton to Urban Dead and more ..."
-                   em:optionsURL="chrome://udwidget/content/options.xul"
-                   em:iconURL="chrome://udwidget/skin/udmap.gif"
-                   em:homepageURL="http://maps.urbandead.info/udwidget/">
-    <em:targetApplication RDF:resource="rdf:#$Tfark3"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="rdf:#$Tfark3"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="1.5"
-                   em:maxVersion="3.*" />
-</RDF:RDF>
+
+    <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+
+		xmlns:NC="http://home.netscape.com/NC-rdf#"
+		xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    	<RDF:Description about="urn:mozilla:install-manifest"
+>
+
+            <em:id>belsnickle@zgarah.com</em:id>
+
+            <em:name>udwidget
+</em:name>
+            <em:version>1.4.1.2</em:version>
+
+
+
+    	    <em:targetApplication>
+		<description>
+	    	<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>1.5</em:minVersion>
+
+                <em:maxVersion>23.*.*</em:maxVersion>
+		</description>
+    	    </em:targetApplication>
+	    
+            <em:creator>Max Grievas, http://wiki.urbandead.com/index.php/User:Max_Grivas</em:creator>
+
+	    <em:developer>karek/Belsnickle aka Jonathan Wommack</em:developer>
+	    <em:contributor>Revenant,Sebastion Wiers</em:contributor>
+            <em:description>Add map of Malton to Urban Dead and more ...</em:description>
+ 
+            <em:optionsURL>chrome://udwidget/content/options.xul"</em:optionsURL>
+            <em:iconURL>chrome://udwidget/skin/udmap.gif</em:iconURL>
+
+            <em:homepageURL>https://github.com/belsnickle/udwidget</em:homepageURL>
+
+	    
+
+  	</RDF:Description>
+
+
+    </RDF:RDF>
